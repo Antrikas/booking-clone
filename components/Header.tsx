@@ -5,7 +5,7 @@ import  Link  from 'next/link';
 import React, { Fragment } from 'react'
 import { useState } from "react"; 
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react"
-import {  HomeIcon, PaperAirplaneIcon, PlayCircleIcon } from '@heroicons/react/16/solid';
+import {  ChevronDownIcon, HomeIcon, PaperAirplaneIcon, PlayCircleIcon } from '@heroicons/react/16/solid';
 import { PhoneIcon } from '@heroicons/react/16/solid';
 import { ChatBubbleLeftIcon } from '@heroicons/react/16/solid';
 
@@ -74,7 +74,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                         <Popover.Button className="flex items-center gap-x-1 text-sm 
                         font-semibold leading-6 text-white">
                             Stays
-                            <ChevronDoubleDownIcon
+                            <ChevronDownIcon
                             className="h-5 w-5 flex-none text-white"
                             aria-hidden="true"
                             />
