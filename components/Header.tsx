@@ -176,6 +176,23 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
             <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full
             overflow-y-auto bg-[#013B94] px-6 py-6 sm: max-w-sm sm:ring-1
             sm:ring-gray-900/10">
+                <div className="flex items-center justify-between">
+                   <a href="#" className="-m-1.5 p-1.5">
+                    <span className="sr-only">Booking.com</span>
+                    <img
+                    className="h-8 w-auto"
+                    src='/booking+logo+white.png'
+                    />
+                    </a>     
+                        <button
+                        type="button"
+                        className="-m-2.5 rounded-md p-2.5 text-white"
+                        onClick={() => setMobileMenuOpen(false)}
+                        >
+                            <span className="sr-only">Close menu</span>
+                            <XMarkIcon className="h-6 w-6" aria-hidden="true"/>
+                        </button>
+                </div>
 
             </Dialog.Panel>
          </Dialog>
