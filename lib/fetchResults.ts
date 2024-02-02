@@ -1,6 +1,7 @@
 import { SearchParams } from "@/app/Search/page";
 import { Result } from "@/typings";
 
+
 export async function fetchResults(searchParams: SearchParams) {
   const username = process.env.OXYLABS_USERNAME;
   const password = process.env.OXYLABS_PASSWORD;
@@ -127,7 +128,7 @@ export async function fetchResults(searchParams: SearchParams) {
     },
   };
 
-  const response = await fetch("https://realtime.oxylabs.io/v1/queries?source=universal&url=https%3A%2F%2Fsandbox.oxylabs.io%2F", {
+  const response = await fetch('https://realtime.oxylabs.io/v1/queries', {
     method: "POST",
     body: JSON.stringify(body),
     next: {
